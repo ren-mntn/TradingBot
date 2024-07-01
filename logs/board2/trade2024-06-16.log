@@ -1,0 +1,653 @@
+2024-06-16 18:50:43.596[INFO]: Initialize logger : BFSX3 Ver 2.40
+2024-06-16 18:50:43.599[INFO]: Parameter [trade.yaml / strategy_py]               : strategy/a_test.py
+2024-06-16 18:50:43.599[INFO]: Parameter [trade.yaml / strategy_yaml]             : strategy/dp_board2.yaml
+2024-06-16 18:50:43.599[INFO]: Parameter [trade.yaml / trade / name]              : byb-inverse
+2024-06-16 18:50:43.599[INFO]: Parameter [trade.yaml / trade / exchange]          : bybit
+2024-06-16 18:50:43.599[INFO]: Parameter [trade.yaml / trade / symbol]            : BTCUSD
+2024-06-16 18:50:43.599[INFO]: Parameter [trade.yaml / console_log_level]         : INFO
+2024-06-16 18:50:43.599[INFO]: Parameter [trade.yaml / console_output]            : True
+2024-06-16 18:50:43.599[INFO]: Parameter [trade.yaml / base_position]             : 0.0
+2024-06-16 18:50:43.599[INFO]: Parameter [trade.yaml / adjust_position_with_api]  : False
+2024-06-16 18:50:43.599[INFO]: Parameter [trade.yaml / adjust_max_size]           : 0.5
+2024-06-16 18:50:43.600[INFO]: Parameter [dp_board2.yaml / parameters]            : None
+2024-06-16 18:50:43.600[INFO]: Parameter [dp_board2.yaml / logging / folder]      : logs/board2/
+2024-06-16 18:50:43.600[INFO]: Parameter [dp_board2.yaml / logging / level]       : DEBUG
+2024-06-16 18:50:43.601[INFO]: Parameter [dp_board2.yaml / subscribe / execution] : False
+2024-06-16 18:50:43.601[INFO]: Parameter [dp_board2.yaml / subscribe / board]     : True
+2024-06-16 18:50:43.608[ERROR]: No module named 'sortedcontainers'
+2024-06-16 18:50:43.609[INFO]: Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py", line 54, in start
+    from libs.exchanges.bybit_inverse import BybitInverse as bfsx3_exchange
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/bybit_inverse.py", line 13, in <module>
+    from libs.market import *
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/market/__init__.py", line 9, in <module>
+    from .board_info import BoardInfo
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/market/board_info.py", line 7, in <module>
+    from sortedcontainers import SortedDict
+ModuleNotFoundError: No module named 'sortedcontainers'
+
+2024-06-16 18:50:55.663[INFO]: Initialize logger : BFSX3 Ver 2.40
+2024-06-16 18:50:55.665[INFO]: Parameter [trade.yaml / strategy_py]               : strategy/a_test.py
+2024-06-16 18:50:55.665[INFO]: Parameter [trade.yaml / strategy_yaml]             : strategy/dp_board2.yaml
+2024-06-16 18:50:55.666[INFO]: Parameter [trade.yaml / trade / name]              : byb-inverse
+2024-06-16 18:50:55.666[INFO]: Parameter [trade.yaml / trade / exchange]          : bybit
+2024-06-16 18:50:55.666[INFO]: Parameter [trade.yaml / trade / symbol]            : BTCUSD
+2024-06-16 18:50:55.666[INFO]: Parameter [trade.yaml / console_log_level]         : INFO
+2024-06-16 18:50:55.666[INFO]: Parameter [trade.yaml / console_output]            : True
+2024-06-16 18:50:55.666[INFO]: Parameter [trade.yaml / base_position]             : 0.0
+2024-06-16 18:50:55.666[INFO]: Parameter [trade.yaml / adjust_position_with_api]  : False
+2024-06-16 18:50:55.666[INFO]: Parameter [trade.yaml / adjust_max_size]           : 0.5
+2024-06-16 18:50:55.667[INFO]: Parameter [dp_board2.yaml / parameters]            : None
+2024-06-16 18:50:55.668[INFO]: Parameter [dp_board2.yaml / logging / folder]      : logs/board2/
+2024-06-16 18:50:55.668[INFO]: Parameter [dp_board2.yaml / logging / level]       : DEBUG
+2024-06-16 18:50:55.668[INFO]: Parameter [dp_board2.yaml / subscribe / execution] : False
+2024-06-16 18:50:55.668[INFO]: Parameter [dp_board2.yaml / subscribe / board]     : True
+2024-06-16 18:50:55.688[ERROR]: module 'pybotters' has no attribute 'BybitInverseDataStore'
+2024-06-16 18:50:55.688[INFO]: Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py", line 54, in start
+    from libs.exchanges.bybit_inverse import BybitInverse as bfsx3_exchange
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/bybit_inverse.py", line 22, in <module>
+    class BybitInverse(pybotters.BybitInverseDataStore, Bybit):
+AttributeError: module 'pybotters' has no attribute 'BybitInverseDataStore'
+
+2024-06-16 18:51:51.221[INFO]: Initialize logger : BFSX3 Ver 2.40
+2024-06-16 18:51:51.226[INFO]: Parameter [trade.yaml / strategy_py]               : strategy/a_test.py
+2024-06-16 18:51:51.226[INFO]: Parameter [trade.yaml / strategy_yaml]             : strategy/dp_board2.yaml
+2024-06-16 18:51:51.226[INFO]: Parameter [trade.yaml / trade / name]              : bgt
+2024-06-16 18:51:51.226[INFO]: Parameter [trade.yaml / trade / exchange]          : bitget
+2024-06-16 18:51:51.226[INFO]: Parameter [trade.yaml / trade / symbol]            : BTCUSDT
+2024-06-16 18:51:51.226[INFO]: Parameter [trade.yaml / console_log_level]         : INFO
+2024-06-16 18:51:51.227[INFO]: Parameter [trade.yaml / console_output]            : True
+2024-06-16 18:51:51.227[INFO]: Parameter [trade.yaml / base_position]             : 0.0
+2024-06-16 18:51:51.227[INFO]: Parameter [trade.yaml / adjust_position_with_api]  : False
+2024-06-16 18:51:51.227[INFO]: Parameter [trade.yaml / adjust_max_size]           : 0.5
+2024-06-16 18:51:51.228[INFO]: Parameter [dp_board2.yaml / parameters]            : None
+2024-06-16 18:51:51.228[INFO]: Parameter [dp_board2.yaml / logging / folder]      : logs/board2/
+2024-06-16 18:51:51.228[INFO]: Parameter [dp_board2.yaml / logging / level]       : DEBUG
+2024-06-16 18:51:51.228[INFO]: Parameter [dp_board2.yaml / subscribe / execution] : False
+2024-06-16 18:51:51.229[INFO]: Parameter [dp_board2.yaml / subscribe / board]     : True
+2024-06-16 18:51:51.430[DEBUG]: subscribe : {'instType': 'mc', 'channel': 'books', 'instId': 'BTCUSDT'}
+2024-06-16 18:51:51.431[INFO]: ----------------------------------------------------------------------------------------------------
+2024-06-16 18:51:51.431[INFO]:  pos_size = 0.0 / average_price = 0
+2024-06-16 18:51:51.431[INFO]: ----------------------------------------------------------------------------------------------------
+2024-06-16 18:51:51.431[INFO]: ----------------------------------------------------------------------------------------------------
+2024-06-16 18:51:51.431[INFO]:  realized = 0 / commission = 0
+2024-06-16 18:51:51.431[INFO]: ----------------------------------------------------------------------------------------------------
+2024-06-16 18:51:51.435[INFO]: Load MyStrategy class dynamically: module=<module 'strategy.a_test' from 'strategy/a_test.py'>
+2024-06-16 18:51:51.436[INFO]: Succeeded setup strategy. logic=strategy/a_test.py, yaml=strategy/dp_board2.yaml
+2024-06-16 18:51:51.503[ERROR]: 'MyStrategy' object has no attribute 'APICandleCollector'
+2024-06-16 18:51:51.504[INFO]: Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py", line 128, in start
+    await self._strategy_class.initialize()
+  File "strategy/a_test.py", line 11, in initialize
+    self.candleGenerator = self.APICandleCollector(timescale=3, num_of_candle=100, callback=self.logic)
+AttributeError: 'MyStrategy' object has no attribute 'APICandleCollector'
+
+2024-06-16 18:51:52.439[INFO]: [Bitget:websocket] pid = 10088
+2024-06-16 18:51:52.439[INFO]: [Bitget:websocket] websocket connect to  : wss://ws.bitget.com/mix/v1/stream
+2024-06-16 18:51:52.439[INFO]: [Bitget:websocket] subscribe : [{'op': 'subscribe', 'args': [{'instType': 'mc', 'channel': 'books', 'instId': 'BTCUSDT'}]}]
+2024-06-16 18:51:52.545[INFO]: [Bitget:websocket error] Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 63, in _main
+    command = self._command_queue.get(block=False)
+  File "/usr/lib/python3.10/multiprocessing/queues.py", line 116, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 67, in _main
+    if self._connected.value != self.ws.connected :
+AttributeError: 'WebSocketApp' object has no attribute 'connected'
+
+2024-06-16 18:51:52.545[INFO]: [Bitget:websocket] websocket stopped
+2024-06-16 18:52:22.471[INFO]: [Bitget:websocket] stopping..
+2024-06-16 18:52:23.473[INFO]: [Bitget:websocket] waiting until stopped (9)
+2024-06-16 18:52:24.472[INFO]: [Bitget:websocket] terminate process
+2024-06-16 18:52:24.474[INFO]: [Bitget:websocket] waiting until stopped (8)
+2024-06-16 18:52:24.474[INFO]: [Bitget:websocket] process stopped
+2024-06-16 18:52:30.555[INFO]: [Bitget:websocket] pid = 10255
+2024-06-16 18:52:30.556[INFO]: [Bitget:websocket] websocket connect to  : wss://ws.bitget.com/mix/v1/stream
+2024-06-16 18:52:30.556[INFO]: [Bitget:websocket] subscribe : [{'op': 'subscribe', 'args': [{'instType': 'mc', 'channel': 'books', 'instId': 'BTCUSDT'}]}]
+2024-06-16 18:52:31.557[INFO]: [Bitget:websocket error] Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 63, in _main
+    command = self._command_queue.get(block=False)
+  File "/usr/lib/python3.10/multiprocessing/queues.py", line 116, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 67, in _main
+    if self._connected.value != self.ws.connected :
+AttributeError: 'WebSocketApp' object has no attribute 'connected'
+
+2024-06-16 18:52:31.557[INFO]: [Bitget:websocket] websocket stopped
+2024-06-16 18:53:01.503[INFO]: [Bitget:websocket] stopping..
+2024-06-16 18:53:02.505[INFO]: [Bitget:websocket] waiting until stopped (9)
+2024-06-16 18:53:03.504[INFO]: [Bitget:websocket] terminate process
+2024-06-16 18:53:03.506[INFO]: [Bitget:websocket] waiting until stopped (8)
+2024-06-16 18:53:03.506[INFO]: [Bitget:websocket] process stopped
+2024-06-16 18:53:09.591[INFO]: [Bitget:websocket] pid = 10416
+2024-06-16 18:53:09.591[INFO]: [Bitget:websocket] websocket connect to  : wss://ws.bitget.com/mix/v1/stream
+2024-06-16 18:53:09.591[INFO]: [Bitget:websocket] subscribe : [{'op': 'subscribe', 'args': [{'instType': 'mc', 'channel': 'books', 'instId': 'BTCUSDT'}]}]
+2024-06-16 18:53:10.592[INFO]: [Bitget:websocket error] Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 63, in _main
+    command = self._command_queue.get(block=False)
+  File "/usr/lib/python3.10/multiprocessing/queues.py", line 116, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 67, in _main
+    if self._connected.value != self.ws.connected :
+AttributeError: 'WebSocketApp' object has no attribute 'connected'
+
+2024-06-16 18:53:10.592[INFO]: [Bitget:websocket] websocket stopped
+2024-06-16 18:53:40.536[INFO]: [Bitget:websocket] stopping..
+2024-06-16 18:53:41.537[INFO]: [Bitget:websocket] waiting until stopped (9)
+2024-06-16 18:53:42.536[INFO]: [Bitget:websocket] terminate process
+2024-06-16 18:53:42.538[INFO]: [Bitget:websocket] waiting until stopped (8)
+2024-06-16 18:53:42.538[INFO]: [Bitget:websocket] process stopped
+2024-06-16 18:53:48.167[DEBUG]: scheduler_daily_reset          : [<frame at 0x7f43ae4c4420, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 31, code _main_loop>]
+2024-06-16 18:53:48.167[DEBUG]: Task-21                        : [<frame at 0x7f43ae4f8210, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 18:53:48.167[DEBUG]: scheduler_run_every_1sec       : [<frame at 0x7f43afa5b490, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 26, code _main_loop>]
+2024-06-16 18:53:48.167[DEBUG]: params_update_check            : [<frame at 0x7f43af5920e0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/params.py', line 29, code _check_update>]
+2024-06-16 18:53:48.167[DEBUG]: bitget_cancel                  : [<frame at 0x7f43ae4c4040, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/base_rest.py', line 22, code _cancel_task>]
+2024-06-16 18:53:48.167[DEBUG]: scheduler_disp_params          : [<frame at 0x7f43ae4c4dd0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 31, code _main_loop>]
+2024-06-16 18:53:48.167[DEBUG]: Task-379                       : [<frame at 0x7f43af5c19a0, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 18:53:48.167[DEBUG]: params_update_check            : [<frame at 0x7f43af5960c0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/params.py', line 29, code _check_update>]
+2024-06-16 18:53:48.167[DEBUG]: Task-17                        : [<frame at 0x7f43ae4c4800, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py', line 170, code main_loop>]
+2024-06-16 18:53:48.167[DEBUG]: websocket_disconnect_check     : [<frame at 0x7f43af599540, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/base_ws.py', line 22, code _check_disconnect>]
+2024-06-16 18:53:48.167[DEBUG]: scheduler_add_stats            : [<frame at 0x7f43ae4c4230, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 31, code _main_loop>]
+2024-06-16 18:53:48.167[DEBUG]: Task-1                         : [<frame at 0x7f43a8000bb0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py', line 163, code start>]
+2024-06-16 18:53:48.167[DEBUG]: bitget_candle                  : [<frame at 0x7f43af641a80, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/bitget.py', line 407, code _wait_candle_event>]
+2024-06-16 18:53:48.168[DEBUG]: Task-18                        : [<frame at 0x7f43afa5a700, file '/usr/lib/python3.10/threading.py', line 973, code _bootstrap>, <frame at 0x7f43b355b0b0, file '/usr/lib/python3.10/threading.py', line 1016, code _bootstrap_inner>, <frame at 0x7f43b0bf9fc0, file '/usr/lib/python3.10/threading.py', line 953, code run>, <frame at 0x7f43afa00950, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/trade.py', line 61, code bot_main_loop>, <frame at 0x7f43a8000e00, file '/usr/lib/python3.10/asyncio/runners.py', line 44, code run>, <frame at 0x7f43af96da80, file '/usr/lib/python3.10/asyncio/base_events.py', line 636, code run_until_complete>, <frame at 0x7f43afa034d0, file '/usr/lib/python3.10/asyncio/base_events.py', line 603, code run_forever>, <frame at 0x7f43a80018d0, file '/usr/lib/python3.10/asyncio/base_events.py', line 1909, code _run_once>, <frame at 0x7f43afa5b2a0, file '/usr/lib/python3.10/asyncio/events.py', line 80, code _run>, <frame at 0x7f43af64e820, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py', line 295, code wait_keyboard_interrupt>]
+2024-06-16 18:53:48.168[DEBUG]: Task-233                       : [<frame at 0x7f43ae4f9260, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 18:53:48.168[DEBUG]: Task-380                       : [<frame at 0x7f43ae4f83e0, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 18:53:48.168[DEBUG]: Task-24                        : [<frame at 0x7f43ae4f8780, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 18:53:48.168[DEBUG]: bitget_websocket               : [<frame at 0x7f43af59fc50, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py', line 140, code _start_websocket>]
+2024-06-16 18:53:48.168[INFO]: Ctrl+C
+2024-06-16 18:53:48.168[INFO]: candel orders : []
+2024-06-16 18:53:48.168[INFO]: [Bitget:websocket] stopping..
+2024-06-16 18:53:48.168[INFO]: [Bitget:websocket] process stopped
+2024-06-16 18:53:48.168[INFO]: Wait 5secs...  Current Pos : 0.0
+2024-06-16 18:53:49.170[INFO]: Wait 4secs...  Current Pos : 0.0
+2024-06-16 18:53:49.541[INFO]: [Bitget:websocket] pid = 10598
+2024-06-16 18:53:49.541[INFO]: [Bitget:websocket] websocket connect to  : wss://ws.bitget.com/mix/v1/stream
+2024-06-16 18:53:49.542[INFO]: [Bitget:websocket] subscribe : [{'op': 'subscribe', 'args': [{'instType': 'mc', 'channel': 'books', 'instId': 'BTCUSDT'}]}]
+2024-06-16 18:53:49.641[INFO]: [Bitget:websocket error] Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 63, in _main
+    command = self._command_queue.get(block=False)
+  File "/usr/lib/python3.10/multiprocessing/queues.py", line 116, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 67, in _main
+    if self._connected.value != self.ws.connected :
+AttributeError: 'WebSocketApp' object has no attribute 'connected'
+
+2024-06-16 18:53:49.641[INFO]: [Bitget:websocket] websocket stopped
+2024-06-16 18:53:50.172[INFO]: Wait 3secs...  Current Pos : 0.0
+2024-06-16 18:53:51.173[INFO]: Wait 2secs...  Current Pos : 0.0
+2024-06-16 18:53:52.175[INFO]: Wait 1secs...  Current Pos : 0.0
+2024-06-16 18:53:53.177[INFO]: Stopped
+2024-06-16 18:53:56.886[INFO]: Initialize logger : BFSX3 Ver 2.40
+2024-06-16 18:53:56.889[INFO]: Parameter [trade.yaml / strategy_py]               : strategy/a_test.py
+2024-06-16 18:53:56.889[INFO]: Parameter [trade.yaml / strategy_yaml]             : strategy/dp_board2.yaml
+2024-06-16 18:53:56.889[INFO]: Parameter [trade.yaml / trade / name]              : bgt
+2024-06-16 18:53:56.889[INFO]: Parameter [trade.yaml / trade / exchange]          : bitget
+2024-06-16 18:53:56.889[INFO]: Parameter [trade.yaml / trade / symbol]            : BTCUSDT
+2024-06-16 18:53:56.889[INFO]: Parameter [trade.yaml / console_log_level]         : INFO
+2024-06-16 18:53:56.889[INFO]: Parameter [trade.yaml / console_output]            : True
+2024-06-16 18:53:56.889[INFO]: Parameter [trade.yaml / base_position]             : 0.0
+2024-06-16 18:53:56.889[INFO]: Parameter [trade.yaml / adjust_position_with_api]  : False
+2024-06-16 18:53:56.889[INFO]: Parameter [trade.yaml / adjust_max_size]           : 0.5
+2024-06-16 18:53:56.891[INFO]: Parameter [dp_board2.yaml / parameters]            : None
+2024-06-16 18:53:56.891[INFO]: Parameter [dp_board2.yaml / logging / folder]      : logs/board2/
+2024-06-16 18:53:56.891[INFO]: Parameter [dp_board2.yaml / logging / level]       : DEBUG
+2024-06-16 18:53:56.891[INFO]: Parameter [dp_board2.yaml / subscribe / execution] : False
+2024-06-16 18:53:56.891[INFO]: Parameter [dp_board2.yaml / subscribe / board]     : True
+2024-06-16 18:53:57.071[DEBUG]: subscribe : {'instType': 'mc', 'channel': 'books', 'instId': 'BTCUSDT'}
+2024-06-16 18:53:57.071[INFO]: ----------------------------------------------------------------------------------------------------
+2024-06-16 18:53:57.071[INFO]:  pos_size = 0.0 / average_price = 0
+2024-06-16 18:53:57.071[INFO]: ----------------------------------------------------------------------------------------------------
+2024-06-16 18:53:57.072[INFO]: ----------------------------------------------------------------------------------------------------
+2024-06-16 18:53:57.072[INFO]:  realized = 0 / commission = 0
+2024-06-16 18:53:57.072[INFO]: ----------------------------------------------------------------------------------------------------
+2024-06-16 18:53:57.073[INFO]: Load MyStrategy class dynamically: module=<module 'strategy.a_test' from 'strategy/a_test.py'>
+2024-06-16 18:53:57.073[INFO]: Succeeded setup strategy. logic=strategy/a_test.py, yaml=strategy/dp_board2.yaml
+2024-06-16 18:53:57.114[ERROR]: 'Bitget' object has no attribute 'create'
+2024-06-16 18:53:57.116[INFO]: Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py", line 128, in start
+    await self._strategy_class.initialize()
+  File "strategy/a_test.py", line 11, in initialize
+    self.candle1 = self.APICandle(timeframe=2, num_of_candle=500, callback=self.logic_loop1)
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/base_strategy.py", line 99, in APICandle
+    return target_exchange.candle_store.CreateCandleCollectTask(exchange=target_exchange, symbol=(symbol or self._symbol), timeframe=timeframe, num_of_candle=num_of_candle, callback=callback, args=args)
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/min_candle.py", line 28, in CreateCandleCollectTask
+    exchange.create_candle_class(id)
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/bitget.py", line 543, in create_candle_class
+    self.create(id, datastore_class=Kline)
+AttributeError: 'Bitget' object has no attribute 'create'
+
+2024-06-16 18:53:58.076[INFO]: [Bitget:websocket] pid = 10656
+2024-06-16 18:53:58.077[INFO]: [Bitget:websocket] websocket connect to  : wss://ws.bitget.com/mix/v1/stream
+2024-06-16 18:53:58.077[INFO]: [Bitget:websocket] subscribe : [{'op': 'subscribe', 'args': [{'instType': 'mc', 'channel': 'books', 'instId': 'BTCUSDT'}]}]
+2024-06-16 18:53:58.179[INFO]: [Bitget:websocket error] Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 63, in _main
+    command = self._command_queue.get(block=False)
+  File "/usr/lib/python3.10/multiprocessing/queues.py", line 116, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 67, in _main
+    if self._connected.value != self.ws.connected :
+AttributeError: 'WebSocketApp' object has no attribute 'connected'
+
+2024-06-16 18:53:58.179[INFO]: [Bitget:websocket] websocket stopped
+2024-06-16 18:54:28.107[INFO]: [Bitget:websocket] stopping..
+2024-06-16 18:54:29.108[INFO]: [Bitget:websocket] waiting until stopped (9)
+2024-06-16 18:54:30.108[INFO]: [Bitget:websocket] terminate process
+2024-06-16 18:54:30.108[INFO]: [Bitget:websocket] waiting until stopped (8)
+2024-06-16 18:54:30.108[INFO]: [Bitget:websocket] process stopped
+2024-06-16 18:54:33.111[DEBUG]: scheduler_daily_reset          : [<frame at 0x7f61700bc230, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 31, code _main_loop>]
+2024-06-16 18:54:33.111[DEBUG]: Task-21                        : [<frame at 0x7f61700f03e0, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 18:54:33.111[DEBUG]: scheduler_run_every_1sec       : [<frame at 0x7f617166b490, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 26, code _main_loop>]
+2024-06-16 18:54:33.111[DEBUG]: params_update_check            : [<frame at 0x7f61711a20e0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/params.py', line 29, code _check_update>]
+2024-06-16 18:54:33.111[DEBUG]: bitget_cancel                  : [<frame at 0x7f61711afc50, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/base_rest.py', line 22, code _cancel_task>]
+2024-06-16 18:54:33.111[DEBUG]: scheduler_disp_params          : [<frame at 0x7f61700bcbe0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 31, code _main_loop>]
+2024-06-16 18:54:33.111[DEBUG]: params_update_check            : [<frame at 0x7f61711a60c0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/params.py', line 29, code _check_update>]
+2024-06-16 18:54:33.111[DEBUG]: Task-17                        : [<frame at 0x7f61700bc610, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py', line 170, code main_loop>]
+2024-06-16 18:54:33.111[DEBUG]: websocket_disconnect_check     : [<frame at 0x7f61711a9540, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/base_ws.py', line 22, code _check_disconnect>]
+2024-06-16 18:54:33.111[DEBUG]: scheduler_add_stats            : [<frame at 0x7f61700bc040, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 31, code _main_loop>]
+2024-06-16 18:54:33.111[DEBUG]: Task-1                         : [<frame at 0x7f616c000bb0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py', line 163, code start>]
+2024-06-16 18:54:33.111[DEBUG]: Task-131                       : [<frame at 0x7f61712257d0, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 18:54:33.111[DEBUG]: bitget_candle                  : [<frame at 0x7f6171239a80, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/bitget.py', line 407, code _wait_candle_event>]
+2024-06-16 18:54:33.111[DEBUG]: Task-18                        : [<frame at 0x7f617166a700, file '/usr/lib/python3.10/threading.py', line 973, code _bootstrap>, <frame at 0x7f617518b0b0, file '/usr/lib/python3.10/threading.py', line 1016, code _bootstrap_inner>, <frame at 0x7f6172835fc0, file '/usr/lib/python3.10/threading.py', line 953, code run>, <frame at 0x7f6171610950, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/trade.py', line 61, code bot_main_loop>, <frame at 0x7f616c000e00, file '/usr/lib/python3.10/asyncio/runners.py', line 44, code run>, <frame at 0x7f6171381a80, file '/usr/lib/python3.10/asyncio/base_events.py', line 636, code run_until_complete>, <frame at 0x7f61716134d0, file '/usr/lib/python3.10/asyncio/base_events.py', line 603, code run_forever>, <frame at 0x7f616c0018d0, file '/usr/lib/python3.10/asyncio/base_events.py', line 1909, code _run_once>, <frame at 0x7f617166b2a0, file '/usr/lib/python3.10/asyncio/events.py', line 80, code _run>, <frame at 0x7f61712469f0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py', line 295, code wait_keyboard_interrupt>]
+2024-06-16 18:54:33.111[DEBUG]: Task-32                        : [<frame at 0x7f61700f1260, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 18:54:33.111[DEBUG]: Task-132                       : [<frame at 0x7f61700f05b0, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 18:54:33.111[DEBUG]: Task-24                        : [<frame at 0x7f61700f0950, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 18:54:33.111[DEBUG]: bitget_websocket               : [<frame at 0x7f61711afa60, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py', line 194, code _start_websocket>]
+2024-06-16 18:54:33.111[INFO]: Ctrl+C
+2024-06-16 18:54:33.111[INFO]: candel orders : []
+2024-06-16 18:54:33.112[INFO]: [Bitget:websocket] stopping..
+2024-06-16 18:54:33.112[INFO]: [Bitget:websocket] process stopped
+2024-06-16 18:54:33.112[INFO]: Wait 5secs...  Current Pos : 0.0
+2024-06-16 18:54:34.113[INFO]: Wait 4secs...  Current Pos : 0.0
+2024-06-16 18:54:35.113[INFO]: Wait 3secs...  Current Pos : 0.0
+2024-06-16 18:54:36.116[INFO]: Wait 2secs...  Current Pos : 0.0
+2024-06-16 18:54:36.226[INFO]: [Bitget:websocket] pid = 10831
+2024-06-16 18:54:36.226[INFO]: [Bitget:websocket] websocket connect to  : wss://ws.bitget.com/mix/v1/stream
+2024-06-16 18:54:36.226[INFO]: [Bitget:websocket] subscribe : [{'op': 'subscribe', 'args': [{'instType': 'mc', 'channel': 'books', 'instId': 'BTCUSDT'}]}]
+2024-06-16 18:54:37.118[INFO]: Wait 1secs...  Current Pos : 0.0
+2024-06-16 18:54:37.227[INFO]: [Bitget:websocket error] Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 63, in _main
+    command = self._command_queue.get(block=False)
+  File "/usr/lib/python3.10/multiprocessing/queues.py", line 116, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 67, in _main
+    if self._connected.value != self.ws.connected :
+AttributeError: 'WebSocketApp' object has no attribute 'connected'
+
+2024-06-16 18:54:37.228[INFO]: [Bitget:websocket] websocket stopped
+2024-06-16 18:54:38.119[INFO]: Stopped
+2024-06-16 18:54:42.372[INFO]: Initialize logger : BFSX3 Ver 2.40
+2024-06-16 18:54:42.375[INFO]: Parameter [trade.yaml / strategy_py]               : strategy/a_test.py
+2024-06-16 18:54:42.375[INFO]: Parameter [trade.yaml / strategy_yaml]             : strategy/dp_board2.yaml
+2024-06-16 18:54:42.375[INFO]: Parameter [trade.yaml / trade / name]              : bgt
+2024-06-16 18:54:42.375[INFO]: Parameter [trade.yaml / trade / exchange]          : bitget
+2024-06-16 18:54:42.375[INFO]: Parameter [trade.yaml / trade / symbol]            : BTCUSDT
+2024-06-16 18:54:42.375[INFO]: Parameter [trade.yaml / console_log_level]         : INFO
+2024-06-16 18:54:42.376[INFO]: Parameter [trade.yaml / console_output]            : True
+2024-06-16 18:54:42.376[INFO]: Parameter [trade.yaml / base_position]             : 0.0
+2024-06-16 18:54:42.376[INFO]: Parameter [trade.yaml / adjust_position_with_api]  : False
+2024-06-16 18:54:42.376[INFO]: Parameter [trade.yaml / adjust_max_size]           : 0.5
+2024-06-16 18:54:42.377[INFO]: Parameter [dp_board2.yaml / parameters]            : None
+2024-06-16 18:54:42.377[INFO]: Parameter [dp_board2.yaml / logging / folder]      : logs/board2/
+2024-06-16 18:54:42.377[INFO]: Parameter [dp_board2.yaml / logging / level]       : DEBUG
+2024-06-16 18:54:42.377[INFO]: Parameter [dp_board2.yaml / subscribe / execution] : False
+2024-06-16 18:54:42.377[INFO]: Parameter [dp_board2.yaml / subscribe / board]     : True
+2024-06-16 18:54:42.569[DEBUG]: subscribe : {'instType': 'mc', 'channel': 'books', 'instId': 'BTCUSDT'}
+2024-06-16 18:54:42.569[INFO]: ----------------------------------------------------------------------------------------------------
+2024-06-16 18:54:42.569[INFO]:  pos_size = 0.0 / average_price = 0
+2024-06-16 18:54:42.569[INFO]: ----------------------------------------------------------------------------------------------------
+2024-06-16 18:54:42.570[INFO]: ----------------------------------------------------------------------------------------------------
+2024-06-16 18:54:42.570[INFO]:  realized = 0 / commission = 0
+2024-06-16 18:54:42.570[INFO]: ----------------------------------------------------------------------------------------------------
+2024-06-16 18:54:42.571[INFO]: Load MyStrategy class dynamically: module=<module 'strategy.a_test' from 'strategy/a_test.py'>
+2024-06-16 18:54:42.572[INFO]: Succeeded setup strategy. logic=strategy/a_test.py, yaml=strategy/dp_board2.yaml
+2024-06-16 18:54:42.644[ERROR]: 'Bitget' object has no attribute 'create'
+2024-06-16 18:54:42.645[INFO]: Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py", line 128, in start
+    await self._strategy_class.initialize()
+  File "strategy/a_test.py", line 11, in initialize
+    self.candle2 = self.APICandle(timeframe=1, num_of_candle=500, callback=self.logic_loop2)
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/base_strategy.py", line 99, in APICandle
+    return target_exchange.candle_store.CreateCandleCollectTask(exchange=target_exchange, symbol=(symbol or self._symbol), timeframe=timeframe, num_of_candle=num_of_candle, callback=callback, args=args)
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/min_candle.py", line 28, in CreateCandleCollectTask
+    exchange.create_candle_class(id)
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/bitget.py", line 543, in create_candle_class
+    self.create(id, datastore_class=Kline)
+AttributeError: 'Bitget' object has no attribute 'create'
+
+2024-06-16 18:54:43.575[INFO]: [Bitget:websocket] pid = 10883
+2024-06-16 18:54:43.575[INFO]: [Bitget:websocket] websocket connect to  : wss://ws.bitget.com/mix/v1/stream
+2024-06-16 18:54:43.576[INFO]: [Bitget:websocket] subscribe : [{'op': 'subscribe', 'args': [{'instType': 'mc', 'channel': 'books', 'instId': 'BTCUSDT'}]}]
+2024-06-16 18:54:43.677[INFO]: [Bitget:websocket error] Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 63, in _main
+    command = self._command_queue.get(block=False)
+  File "/usr/lib/python3.10/multiprocessing/queues.py", line 116, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 67, in _main
+    if self._connected.value != self.ws.connected :
+AttributeError: 'WebSocketApp' object has no attribute 'connected'
+
+2024-06-16 18:54:43.678[INFO]: [Bitget:websocket] websocket stopped
+2024-06-16 18:55:13.416[INFO]: Deleted [trade.yaml / trade]                       : ({'name': 'bgt', 'exchange': 'bitget', 'symbol': 'BTCUSDT', 'apikey': '', 'secret': '', 'passphase': ''}) -> none
+2024-06-16 18:55:13.604[INFO]: [Bitget:websocket] stopping..
+2024-06-16 18:55:14.605[INFO]: [Bitget:websocket] waiting until stopped (9)
+2024-06-16 18:55:15.605[INFO]: [Bitget:websocket] terminate process
+2024-06-16 18:55:15.606[INFO]: [Bitget:websocket] waiting until stopped (8)
+2024-06-16 18:55:15.606[INFO]: [Bitget:websocket] process stopped
+2024-06-16 18:55:20.425[INFO]: Parameter [trade.yaml / trade / name]              : byb-usdt
+2024-06-16 18:55:20.425[INFO]: Parameter [trade.yaml / trade / exchange]          : bybit
+2024-06-16 18:55:20.425[INFO]: Parameter [trade.yaml / trade / symbol]            : BTCUSD
+2024-06-16 18:55:21.369[DEBUG]: scheduler_daily_reset          : [<frame at 0x7fcb85eac230, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 31, code _main_loop>]
+2024-06-16 18:55:21.369[DEBUG]: Task-77                        : [<frame at 0x7fcb85ee03e0, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 18:55:21.369[DEBUG]: scheduler_run_every_1sec       : [<frame at 0x7fcb8745b490, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 26, code _main_loop>]
+2024-06-16 18:55:21.369[DEBUG]: params_update_check            : [<frame at 0x7fcb86f8e0e0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/params.py', line 29, code _check_update>]
+2024-06-16 18:55:21.369[DEBUG]: bitget_cancel                  : [<frame at 0x7fcb86f9fc50, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/base_rest.py', line 22, code _cancel_task>]
+2024-06-16 18:55:21.369[DEBUG]: scheduler_disp_params          : [<frame at 0x7fcb85eacbe0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 31, code _main_loop>]
+2024-06-16 18:55:21.369[DEBUG]: Task-25                        : [<frame at 0x7fcb85ee0b20, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 18:55:21.369[DEBUG]: params_update_check            : [<frame at 0x7fcb86f920c0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/params.py', line 29, code _check_update>]
+2024-06-16 18:55:21.369[DEBUG]: Task-17                        : [<frame at 0x7fcb85eac610, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py', line 170, code main_loop>]
+2024-06-16 18:55:21.369[DEBUG]: websocket_disconnect_check     : [<frame at 0x7fcb86f99540, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/base_ws.py', line 22, code _check_disconnect>]
+2024-06-16 18:55:21.369[DEBUG]: scheduler_add_stats            : [<frame at 0x7fcb85eac040, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 31, code _main_loop>]
+2024-06-16 18:55:21.369[DEBUG]: Task-145                       : [<frame at 0x7fcb85ee0780, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 18:55:21.369[DEBUG]: Task-144                       : [<frame at 0x7fcb870157d0, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 18:55:21.369[DEBUG]: Task-1                         : [<frame at 0x7fcb80000bb0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py', line 163, code start>]
+2024-06-16 18:55:21.369[DEBUG]: bitget_candle                  : [<frame at 0x7fcb87029a80, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/bitget.py', line 407, code _wait_candle_event>]
+2024-06-16 18:55:21.369[DEBUG]: Task-18                        : [<frame at 0x7fcb8745a700, file '/usr/lib/python3.10/threading.py', line 973, code _bootstrap>, <frame at 0x7fcb8b0570b0, file '/usr/lib/python3.10/threading.py', line 1016, code _bootstrap_inner>, <frame at 0x7fcb886e5fc0, file '/usr/lib/python3.10/threading.py', line 953, code run>, <frame at 0x7fcb87400950, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/trade.py', line 61, code bot_main_loop>, <frame at 0x7fcb80000e00, file '/usr/lib/python3.10/asyncio/runners.py', line 44, code run>, <frame at 0x7fcb8736da80, file '/usr/lib/python3.10/asyncio/base_events.py', line 636, code run_until_complete>, <frame at 0x7fcb874034d0, file '/usr/lib/python3.10/asyncio/base_events.py', line 603, code run_forever>, <frame at 0x7fcb800018d0, file '/usr/lib/python3.10/asyncio/base_events.py', line 1909, code _run_once>, <frame at 0x7fcb8745b2a0, file '/usr/lib/python3.10/asyncio/events.py', line 80, code _run>, <frame at 0x7fcb870369f0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py', line 295, code wait_keyboard_interrupt>]
+2024-06-16 18:55:21.369[DEBUG]: Task-22                        : [<frame at 0x7fcb85ee05b0, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 18:55:21.369[DEBUG]: bitget_websocket               : [<frame at 0x7fcb86f9fa60, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py', line 140, code _start_websocket>]
+2024-06-16 18:55:21.370[INFO]: Ctrl+C
+2024-06-16 18:55:21.370[INFO]: candel orders : []
+2024-06-16 18:55:21.370[INFO]: [Bitget:websocket] stopping..
+2024-06-16 18:55:21.370[INFO]: [Bitget:websocket] process stopped
+2024-06-16 18:55:21.370[INFO]: Wait 5secs...  Current Pos : 0.0
+2024-06-16 18:55:22.371[INFO]: Wait 4secs...  Current Pos : 0.0
+2024-06-16 18:55:22.609[INFO]: [Bitget:websocket] pid = 11068
+2024-06-16 18:55:22.610[INFO]: [Bitget:websocket] websocket connect to  : wss://ws.bitget.com/mix/v1/stream
+2024-06-16 18:55:22.610[INFO]: [Bitget:websocket] subscribe : [{'op': 'subscribe', 'args': [{'instType': 'mc', 'channel': 'books', 'instId': 'BTCUSDT'}]}]
+2024-06-16 18:55:22.702[INFO]: [Bitget:websocket error] Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 63, in _main
+    command = self._command_queue.get(block=False)
+  File "/usr/lib/python3.10/multiprocessing/queues.py", line 116, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 67, in _main
+    if self._connected.value != self.ws.connected :
+AttributeError: 'WebSocketApp' object has no attribute 'connected'
+
+2024-06-16 18:55:22.702[INFO]: [Bitget:websocket] websocket stopped
+2024-06-16 18:55:23.373[INFO]: Wait 3secs...  Current Pos : 0.0
+2024-06-16 18:55:24.376[INFO]: Wait 2secs...  Current Pos : 0.0
+2024-06-16 18:55:25.378[INFO]: Wait 1secs...  Current Pos : 0.0
+2024-06-16 18:55:26.380[INFO]: Stopped
+2024-06-16 18:55:30.513[INFO]: Initialize logger : BFSX3 Ver 2.40
+2024-06-16 18:55:30.515[INFO]: Parameter [trade.yaml / strategy_py]               : strategy/a_test.py
+2024-06-16 18:55:30.515[INFO]: Parameter [trade.yaml / strategy_yaml]             : strategy/dp_board2.yaml
+2024-06-16 18:55:30.515[INFO]: Parameter [trade.yaml / trade / name]              : byb-usdt
+2024-06-16 18:55:30.516[INFO]: Parameter [trade.yaml / trade / exchange]          : bybit
+2024-06-16 18:55:30.516[INFO]: Parameter [trade.yaml / trade / symbol]            : BTCUSD
+2024-06-16 18:55:30.516[INFO]: Parameter [trade.yaml / console_log_level]         : INFO
+2024-06-16 18:55:30.516[INFO]: Parameter [trade.yaml / console_output]            : True
+2024-06-16 18:55:30.516[INFO]: Parameter [trade.yaml / base_position]             : 0.0
+2024-06-16 18:55:30.516[INFO]: Parameter [trade.yaml / adjust_position_with_api]  : False
+2024-06-16 18:55:30.516[INFO]: Parameter [trade.yaml / adjust_max_size]           : 0.5
+2024-06-16 18:55:30.517[INFO]: Parameter [dp_board2.yaml / parameters]            : None
+2024-06-16 18:55:30.518[INFO]: Parameter [dp_board2.yaml / logging / folder]      : logs/board2/
+2024-06-16 18:55:30.518[INFO]: Parameter [dp_board2.yaml / logging / level]       : DEBUG
+2024-06-16 18:55:30.518[INFO]: Parameter [dp_board2.yaml / subscribe / execution] : False
+2024-06-16 18:55:30.518[INFO]: Parameter [dp_board2.yaml / subscribe / board]     : True
+2024-06-16 18:55:30.526[ERROR]: module 'pybotters' has no attribute 'BybitInverseDataStore'
+2024-06-16 18:55:30.527[INFO]: Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py", line 54, in start
+    from libs.exchanges.bybit_inverse import BybitInverse as bfsx3_exchange
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/bybit_inverse.py", line 22, in <module>
+    class BybitInverse(pybotters.BybitInverseDataStore, Bybit):
+AttributeError: module 'pybotters' has no attribute 'BybitInverseDataStore'
+
+2024-06-16 18:55:46.235[INFO]: Initialize logger : BFSX3 Ver 2.40
+2024-06-16 18:55:46.238[INFO]: Parameter [trade.yaml / strategy_py]               : strategy/a_test.py
+2024-06-16 18:55:46.238[INFO]: Parameter [trade.yaml / strategy_yaml]             : strategy/dp_board2.yaml
+2024-06-16 18:55:46.238[INFO]: Parameter [trade.yaml / trade / name]              : gmo
+2024-06-16 18:55:46.238[INFO]: Parameter [trade.yaml / trade / exchange]          : GMO
+2024-06-16 18:55:46.238[INFO]: Parameter [trade.yaml / trade / symbol]            : BTC_JPY
+2024-06-16 18:55:46.238[INFO]: Parameter [trade.yaml / console_log_level]         : INFO
+2024-06-16 18:55:46.238[INFO]: Parameter [trade.yaml / console_output]            : True
+2024-06-16 18:55:46.238[INFO]: Parameter [trade.yaml / base_position]             : 0.0
+2024-06-16 18:55:46.238[INFO]: Parameter [trade.yaml / adjust_position_with_api]  : False
+2024-06-16 18:55:46.238[INFO]: Parameter [trade.yaml / adjust_max_size]           : 0.5
+2024-06-16 18:55:46.239[INFO]: Parameter [dp_board2.yaml / parameters]            : None
+2024-06-16 18:55:46.239[INFO]: Parameter [dp_board2.yaml / logging / folder]      : logs/board2/
+2024-06-16 18:55:46.240[INFO]: Parameter [dp_board2.yaml / logging / level]       : DEBUG
+2024-06-16 18:55:46.240[INFO]: Parameter [dp_board2.yaml / subscribe / execution] : False
+2024-06-16 18:55:46.240[INFO]: Parameter [dp_board2.yaml / subscribe / board]     : True
+2024-06-16 18:55:46.253[ERROR]: 'GMOCoin' object has no attribute 'create'
+2024-06-16 18:55:46.253[INFO]: Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py", line 65, in start
+    self.exchange = await bfsx3_exchange(logger=self._logger, candle_store=CandleCollector(self._logger), apikey=apikey,
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/gmo.py", line 125, in __init__
+    self.create_candle_class('candle')
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/gmo.py", line 609, in create_candle_class
+    self.create(id, datastore_class=Kline)
+AttributeError: 'GMOCoin' object has no attribute 'create'
+
+2024-06-16 19:03:04.572[INFO]: Initialize logger : BFSX3 Ver 2.40
+2024-06-16 19:03:04.575[INFO]: Parameter [trade.yaml / strategy_py]               : strategy/a_test.py
+2024-06-16 19:03:04.576[INFO]: Parameter [trade.yaml / strategy_yaml]             : strategy/dp_board2.yaml
+2024-06-16 19:03:04.576[INFO]: Parameter [trade.yaml / trade / name]              : gmo
+2024-06-16 19:03:04.576[INFO]: Parameter [trade.yaml / trade / exchange]          : GMO
+2024-06-16 19:03:04.576[INFO]: Parameter [trade.yaml / trade / symbol]            : BTC_JPY
+2024-06-16 19:03:04.576[INFO]: Parameter [trade.yaml / console_log_level]         : INFO
+2024-06-16 19:03:04.576[INFO]: Parameter [trade.yaml / console_output]            : True
+2024-06-16 19:03:04.576[INFO]: Parameter [trade.yaml / base_position]             : 0.0
+2024-06-16 19:03:04.576[INFO]: Parameter [trade.yaml / adjust_position_with_api]  : False
+2024-06-16 19:03:04.576[INFO]: Parameter [trade.yaml / adjust_max_size]           : 0
+2024-06-16 19:03:04.578[INFO]: Parameter [dp_board2.yaml / parameters]            : None
+2024-06-16 19:03:04.578[INFO]: Parameter [dp_board2.yaml / logging / folder]      : logs/board2/
+2024-06-16 19:03:04.578[INFO]: Parameter [dp_board2.yaml / logging / level]       : DEBUG
+2024-06-16 19:03:04.578[INFO]: Parameter [dp_board2.yaml / subscribe / execution] : False
+2024-06-16 19:03:04.578[INFO]: Parameter [dp_board2.yaml / subscribe / board]     : True
+2024-06-16 19:03:04.585[ERROR]: 'GMOCoin' object has no attribute 'create'
+2024-06-16 19:03:04.586[INFO]: Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py", line 65, in start
+    self.exchange = await bfsx3_exchange(logger=self._logger, candle_store=CandleCollector(self._logger), apikey=apikey,
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/gmo.py", line 125, in __init__
+    self.create_candle_class('candle')
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/gmo.py", line 609, in create_candle_class
+    self.create(id, datastore_class=Kline)
+AttributeError: 'GMOCoin' object has no attribute 'create'
+
+2024-06-16 19:03:33.192[INFO]: Initialize logger : BFSX3 Ver 2.40
+2024-06-16 19:03:33.195[INFO]: Parameter [trade.yaml / strategy_py]               : strategy/a_test.py
+2024-06-16 19:03:33.195[INFO]: Parameter [trade.yaml / strategy_yaml]             : strategy/dp_board2.yaml
+2024-06-16 19:03:33.195[INFO]: Parameter [trade.yaml / trade / name]              : byb-inverse
+2024-06-16 19:03:33.195[INFO]: Parameter [trade.yaml / trade / exchange]          : bybit
+2024-06-16 19:03:33.195[INFO]: Parameter [trade.yaml / trade / symbol]            : BTCUSD
+2024-06-16 19:03:33.195[INFO]: Parameter [trade.yaml / console_log_level]         : INFO
+2024-06-16 19:03:33.195[INFO]: Parameter [trade.yaml / console_output]            : True
+2024-06-16 19:03:33.195[INFO]: Parameter [trade.yaml / base_position]             : 0.0
+2024-06-16 19:03:33.195[INFO]: Parameter [trade.yaml / adjust_position_with_api]  : False
+2024-06-16 19:03:33.196[INFO]: Parameter [trade.yaml / adjust_max_size]           : 0
+2024-06-16 19:03:33.197[INFO]: Parameter [dp_board2.yaml / parameters]            : None
+2024-06-16 19:03:33.197[INFO]: Parameter [dp_board2.yaml / logging / folder]      : logs/board2/
+2024-06-16 19:03:33.197[INFO]: Parameter [dp_board2.yaml / logging / level]       : DEBUG
+2024-06-16 19:03:33.197[INFO]: Parameter [dp_board2.yaml / subscribe / execution] : False
+2024-06-16 19:03:33.197[INFO]: Parameter [dp_board2.yaml / subscribe / board]     : True
+2024-06-16 19:03:33.203[ERROR]: module 'pybotters' has no attribute 'BybitInverseDataStore'
+2024-06-16 19:03:33.204[INFO]: Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py", line 54, in start
+    from libs.exchanges.bybit_inverse import BybitInverse as bfsx3_exchange
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/bybit_inverse.py", line 22, in <module>
+    class BybitInverse(pybotters.BybitInverseDataStore, Bybit):
+AttributeError: module 'pybotters' has no attribute 'BybitInverseDataStore'
+
+2024-06-16 19:05:02.033[INFO]: Initialize logger : BFSX3 Ver 2.40
+2024-06-16 19:05:02.036[INFO]: Parameter [trade.yaml / strategy_py]               : strategy/a_test.py
+2024-06-16 19:05:02.036[INFO]: Parameter [trade.yaml / strategy_yaml]             : strategy/dp_board2.yaml
+2024-06-16 19:05:02.036[INFO]: Parameter [trade.yaml / trade / name]              : bgt
+2024-06-16 19:05:02.036[INFO]: Parameter [trade.yaml / trade / exchange]          : bitget
+2024-06-16 19:05:02.037[INFO]: Parameter [trade.yaml / trade / symbol]            : BTCUSDT
+2024-06-16 19:05:02.037[INFO]: Parameter [trade.yaml / console_log_level]         : INFO
+2024-06-16 19:05:02.037[INFO]: Parameter [trade.yaml / console_output]            : True
+2024-06-16 19:05:02.037[INFO]: Parameter [trade.yaml / base_position]             : 0.0
+2024-06-16 19:05:02.037[INFO]: Parameter [trade.yaml / adjust_position_with_api]  : False
+2024-06-16 19:05:02.037[INFO]: Parameter [trade.yaml / adjust_max_size]           : 0
+2024-06-16 19:05:02.038[INFO]: Parameter [dp_board2.yaml / parameters]            : None
+2024-06-16 19:05:02.039[INFO]: Parameter [dp_board2.yaml / logging / folder]      : logs/board2/
+2024-06-16 19:05:02.039[INFO]: Parameter [dp_board2.yaml / logging / level]       : DEBUG
+2024-06-16 19:05:02.039[INFO]: Parameter [dp_board2.yaml / subscribe / execution] : False
+2024-06-16 19:05:02.039[INFO]: Parameter [dp_board2.yaml / subscribe / board]     : True
+2024-06-16 19:05:02.222[DEBUG]: subscribe : {'instType': 'mc', 'channel': 'books', 'instId': 'BTCUSDT'}
+2024-06-16 19:05:02.223[INFO]: ----------------------------------------------------------------------------------------------------
+2024-06-16 19:05:02.223[INFO]:  pos_size = 0.0 / average_price = 0
+2024-06-16 19:05:02.223[INFO]: ----------------------------------------------------------------------------------------------------
+2024-06-16 19:05:02.223[INFO]: ----------------------------------------------------------------------------------------------------
+2024-06-16 19:05:02.223[INFO]:  realized = 0 / commission = 0
+2024-06-16 19:05:02.223[INFO]: ----------------------------------------------------------------------------------------------------
+2024-06-16 19:05:02.224[INFO]: Load MyStrategy class dynamically: module=<module 'strategy.a_test' from 'strategy/a_test.py'>
+2024-06-16 19:05:02.225[INFO]: Succeeded setup strategy. logic=strategy/a_test.py, yaml=strategy/dp_board2.yaml
+2024-06-16 19:05:02.265[ERROR]: 'Bitget' object has no attribute 'create'
+2024-06-16 19:05:02.267[INFO]: Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py", line 128, in start
+    await self._strategy_class.initialize()
+  File "strategy/a_test.py", line 11, in initialize
+    self.candle2 = self.APICandle(timeframe=1, num_of_candle=500, callback=self.logic_loop2)
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/base_strategy.py", line 99, in APICandle
+    return target_exchange.candle_store.CreateCandleCollectTask(exchange=target_exchange, symbol=(symbol or self._symbol), timeframe=timeframe, num_of_candle=num_of_candle, callback=callback, args=args)
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/min_candle.py", line 28, in CreateCandleCollectTask
+    exchange.create_candle_class(id)
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/bitget.py", line 543, in create_candle_class
+    self.create(id, datastore_class=Kline)
+AttributeError: 'Bitget' object has no attribute 'create'
+
+2024-06-16 19:05:03.228[INFO]: [Bitget:websocket] pid = 16049
+2024-06-16 19:05:03.228[INFO]: [Bitget:websocket] websocket connect to  : wss://ws.bitget.com/mix/v1/stream
+2024-06-16 19:05:03.228[INFO]: [Bitget:websocket] subscribe : [{'op': 'subscribe', 'args': [{'instType': 'mc', 'channel': 'books', 'instId': 'BTCUSDT'}]}]
+2024-06-16 19:05:03.325[INFO]: [Bitget:websocket error] Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 63, in _main
+    command = self._command_queue.get(block=False)
+  File "/usr/lib/python3.10/multiprocessing/queues.py", line 116, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 67, in _main
+    if self._connected.value != self.ws.connected :
+AttributeError: 'WebSocketApp' object has no attribute 'connected'
+
+2024-06-16 19:05:03.325[INFO]: [Bitget:websocket] websocket stopped
+2024-06-16 19:05:33.262[INFO]: [Bitget:websocket] stopping..
+2024-06-16 19:05:34.263[INFO]: [Bitget:websocket] waiting until stopped (9)
+2024-06-16 19:05:35.262[INFO]: [Bitget:websocket] terminate process
+2024-06-16 19:05:35.265[INFO]: [Bitget:websocket] waiting until stopped (8)
+2024-06-16 19:05:35.265[INFO]: [Bitget:websocket] process stopped
+2024-06-16 19:05:41.358[INFO]: [Bitget:websocket] pid = 16256
+2024-06-16 19:05:41.358[INFO]: [Bitget:websocket] websocket connect to  : wss://ws.bitget.com/mix/v1/stream
+2024-06-16 19:05:41.358[INFO]: [Bitget:websocket] subscribe : [{'op': 'subscribe', 'args': [{'instType': 'mc', 'channel': 'books', 'instId': 'BTCUSDT'}]}]
+2024-06-16 19:05:42.360[INFO]: [Bitget:websocket error] Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 63, in _main
+    command = self._command_queue.get(block=False)
+  File "/usr/lib/python3.10/multiprocessing/queues.py", line 116, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 67, in _main
+    if self._connected.value != self.ws.connected :
+AttributeError: 'WebSocketApp' object has no attribute 'connected'
+
+2024-06-16 19:05:42.360[INFO]: [Bitget:websocket] websocket stopped
+2024-06-16 19:06:12.298[INFO]: [Bitget:websocket] stopping..
+2024-06-16 19:06:13.116[INFO]: Changed [trade.yaml / strategy_py]                 : strategy/a_test.py -> strategy/sec_candle.py
+2024-06-16 19:06:13.300[INFO]: [Bitget:websocket] waiting until stopped (9)
+2024-06-16 19:06:14.121[INFO]: Changed [trade.yaml / strategy_yaml]               : strategy/dp_board2.yaml -> strategy/sec_candle.yaml
+2024-06-16 19:06:14.299[INFO]: [Bitget:websocket] terminate process
+2024-06-16 19:06:14.300[INFO]: [Bitget:websocket] waiting until stopped (8)
+2024-06-16 19:06:14.301[INFO]: [Bitget:websocket] process stopped
+2024-06-16 19:06:17.303[DEBUG]: scheduler_daily_reset          : [<frame at 0x7f5f3acbc230, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 31, code _main_loop>]
+2024-06-16 19:06:17.303[DEBUG]: Task-200                       : [<frame at 0x7f5f3acf4040, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 19:06:17.303[DEBUG]: scheduler_run_every_1sec       : [<frame at 0x7f5f3c26b490, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 26, code _main_loop>]
+2024-06-16 19:06:17.303[DEBUG]: params_update_check            : [<frame at 0x7f5f3bda20e0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/params.py', line 29, code _check_update>]
+2024-06-16 19:06:17.303[DEBUG]: bitget_cancel                  : [<frame at 0x7f5f3bdafc50, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/base_rest.py', line 22, code _cancel_task>]
+2024-06-16 19:06:17.303[DEBUG]: scheduler_disp_params          : [<frame at 0x7f5f3acbcbe0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 31, code _main_loop>]
+2024-06-16 19:06:17.303[DEBUG]: Task-25                        : [<frame at 0x7f5f3acf4780, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 19:06:17.303[DEBUG]: params_update_check            : [<frame at 0x7f5f3bda60c0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/params.py', line 29, code _check_update>]
+2024-06-16 19:06:17.303[DEBUG]: Task-17                        : [<frame at 0x7f5f3acbc610, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py', line 170, code main_loop>]
+2024-06-16 19:06:17.303[DEBUG]: websocket_disconnect_check     : [<frame at 0x7f5f3bda9540, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/base_ws.py', line 22, code _check_disconnect>]
+2024-06-16 19:06:17.303[DEBUG]: scheduler_add_stats            : [<frame at 0x7f5f3acbc040, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 31, code _main_loop>]
+2024-06-16 19:06:17.303[DEBUG]: Task-255                       : [<frame at 0x7f5f3acf43e0, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 19:06:17.303[DEBUG]: Task-254                       : [<frame at 0x7f5f3be257d0, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 19:06:17.303[DEBUG]: Task-1                         : [<frame at 0x7f5f34000bb0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py', line 163, code start>]
+2024-06-16 19:06:17.303[DEBUG]: bitget_candle                  : [<frame at 0x7f5f3be35c60, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/bitget.py', line 407, code _wait_candle_event>]
+2024-06-16 19:06:17.303[DEBUG]: Task-18                        : [<frame at 0x7f5f3c26a700, file '/usr/lib/python3.10/threading.py', line 973, code _bootstrap>, <frame at 0x7f5f3fe570b0, file '/usr/lib/python3.10/threading.py', line 1016, code _bootstrap_inner>, <frame at 0x7f5f3d4fdfc0, file '/usr/lib/python3.10/threading.py', line 953, code run>, <frame at 0x7f5f3c210950, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/trade.py', line 61, code bot_main_loop>, <frame at 0x7f5f34000e00, file '/usr/lib/python3.10/asyncio/runners.py', line 44, code run>, <frame at 0x7f5f3bf81a80, file '/usr/lib/python3.10/asyncio/base_events.py', line 636, code run_until_complete>, <frame at 0x7f5f3c2134d0, file '/usr/lib/python3.10/asyncio/base_events.py', line 603, code run_forever>, <frame at 0x7f5f340018d0, file '/usr/lib/python3.10/asyncio/base_events.py', line 1909, code _run_once>, <frame at 0x7f5f3c26b2a0, file '/usr/lib/python3.10/asyncio/events.py', line 80, code _run>, <frame at 0x7f5f3be46650, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py', line 295, code wait_keyboard_interrupt>]
+2024-06-16 19:06:17.303[DEBUG]: Task-22                        : [<frame at 0x7f5f3acf4210, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-06-16 19:06:17.303[DEBUG]: bitget_websocket               : [<frame at 0x7f5f3bdafa60, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py', line 194, code _start_websocket>]
+2024-06-16 19:06:17.303[INFO]: Ctrl+C
+2024-06-16 19:06:17.303[INFO]: candel orders : []
+2024-06-16 19:06:17.304[INFO]: [Bitget:websocket] stopping..
+2024-06-16 19:06:17.304[INFO]: [Bitget:websocket] process stopped
+2024-06-16 19:06:17.304[INFO]: Wait 5secs...  Current Pos : 0.0
+2024-06-16 19:06:18.305[INFO]: Wait 4secs...  Current Pos : 0.0
+2024-06-16 19:06:19.306[INFO]: Wait 3secs...  Current Pos : 0.0
+2024-06-16 19:06:20.307[INFO]: Wait 2secs...  Current Pos : 0.0
+2024-06-16 19:06:20.442[INFO]: [Bitget:websocket] pid = 16448
+2024-06-16 19:06:20.443[INFO]: [Bitget:websocket] websocket connect to  : wss://ws.bitget.com/mix/v1/stream
+2024-06-16 19:06:20.443[INFO]: [Bitget:websocket] subscribe : [{'op': 'subscribe', 'args': [{'instType': 'mc', 'channel': 'books', 'instId': 'BTCUSDT'}]}]
+2024-06-16 19:06:21.308[INFO]: Wait 1secs...  Current Pos : 0.0
+2024-06-16 19:06:21.444[INFO]: [Bitget:websocket error] Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 63, in _main
+    command = self._command_queue.get(block=False)
+  File "/usr/lib/python3.10/multiprocessing/queues.py", line 116, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py", line 67, in _main
+    if self._connected.value != self.ws.connected :
+AttributeError: 'WebSocketApp' object has no attribute 'connected'
+
+2024-06-16 19:06:21.444[INFO]: [Bitget:websocket] websocket stopped
+2024-06-16 19:06:22.309[INFO]: Stopped

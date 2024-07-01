@@ -1,0 +1,165 @@
+2024-07-01 23:24:34.439[INFO]: Initialize logger : BFSX3 Ver 2.40
+2024-07-01 23:24:34.441[INFO]: Parameter [trade.yaml / strategy_py]               : strategy/a_test.py
+2024-07-01 23:24:34.441[INFO]: Parameter [trade.yaml / strategy_yaml]             : strategy/a_test.yaml
+2024-07-01 23:24:34.442[INFO]: Parameter [trade.yaml / trade / name]              : bgt
+2024-07-01 23:24:34.442[INFO]: Parameter [trade.yaml / trade / exchange]          : bitget
+2024-07-01 23:24:34.442[INFO]: Parameter [trade.yaml / trade / symbol]            : BTCUSDT
+2024-07-01 23:24:34.442[INFO]: Parameter [trade.yaml / console_log_level]         : INFO
+2024-07-01 23:24:34.442[INFO]: Parameter [trade.yaml / console_output]            : True
+2024-07-01 23:24:34.442[INFO]: Parameter [trade.yaml / base_position]             : 0.0
+2024-07-01 23:24:34.442[INFO]: Parameter [trade.yaml / adjust_position_with_api]  : False
+2024-07-01 23:24:34.442[INFO]: Parameter [trade.yaml / adjust_max_size]           : 0
+2024-07-01 23:24:34.443[INFO]: Parameter [a_test.yaml / parameters / exchange]    : bitget
+2024-07-01 23:24:34.443[INFO]: Parameter [a_test.yaml / parameters / symbol]      : BTCUSDT
+2024-07-01 23:24:34.443[INFO]: Parameter [a_test.yaml / parameters / timescale]   : 10
+2024-07-01 23:24:34.444[INFO]: Parameter [a_test.yaml / parameters / num_of_candle] : 200
+2024-07-01 23:24:34.444[INFO]: Parameter [a_test.yaml / logging / folder]         : logs/a_test/
+2024-07-01 23:24:34.444[INFO]: Parameter [a_test.yaml / logging / level]          : DEBUG
+2024-07-01 23:24:34.665[DEBUG]: subscribe : {'instType': 'mc', 'channel': 'trade', 'instId': 'BTCUSDT'}
+2024-07-01 23:24:34.666[INFO]: ----------------------------------------------------------------------------------------------------
+2024-07-01 23:24:34.666[INFO]:  pos_size = 0.0 / average_price = 0
+2024-07-01 23:24:34.666[INFO]: ----------------------------------------------------------------------------------------------------
+2024-07-01 23:24:34.676[INFO]: ----------------------------------------------------------------------------------------------------
+2024-07-01 23:24:34.676[INFO]:  realized = 0 / commission = 0
+2024-07-01 23:24:34.676[INFO]: ----------------------------------------------------------------------------------------------------
+2024-07-01 23:24:34.682[INFO]: Load MyStrategy class dynamically: module=<module 'strategy.a_test' from 'strategy/a_test.py'>
+2024-07-01 23:24:34.682[INFO]: Succeeded setup strategy. logic=strategy/a_test.py, yaml=strategy/a_test.yaml
+2024-07-01 23:24:34.730[ERROR]: 'Bitget' object has no attribute 'create'
+2024-07-01 23:24:34.732[INFO]: Traceback (most recent call last):
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py", line 125, in start
+    await self._strategy_class.initialize()
+  File "strategy/a_test.py", line 11, in initialize
+    self.candle2 = self.APICandle(timeframe=1, num_of_candle=500, callback=self.logic_loop2)
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/base_strategy.py", line 95, in APICandle
+    return target_exchange.candle_store.CreateCandleCollectTask(exchange=target_exchange, symbol=(symbol or self._symbol), timeframe=timeframe, num_of_candle=num_of_candle, callback=callback, args=args)
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/min_candle.py", line 28, in CreateCandleCollectTask
+    exchange.create_candle_class(id)
+  File "/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/bitget.py", line 543, in create_candle_class
+    self.create(id, datastore_class=Kline)
+AttributeError: 'Bitget' object has no attribute 'create'
+
+2024-07-01 23:24:35.685[INFO]: [Bitget:websocket] pid = 12400
+2024-07-01 23:24:35.686[INFO]: [Bitget:websocket] websocket connect to  : wss://ws.bitget.com/mix/v1/stream
+2024-07-01 23:24:35.686[INFO]: [Bitget:websocket] subscribe : [{'op': 'subscribe', 'args': [{'instType': 'mc', 'channel': 'trade', 'instId': 'BTCUSDT'}]}]
+2024-07-01 23:24:35.686[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:35.687[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:35.691[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:35.692[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:35.770[INFO]: [Bitget:websocket] connected
+2024-07-01 23:24:36.950[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:37.146[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:37.248[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:37.652[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:38.006[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:39.166[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:39.827[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:39.868[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:40.123[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:40.228[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:41.728[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:43.942[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:44.093[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:44.705[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:45.954[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:46.414[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:46.458[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:46.813[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:46.962[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:47.365[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:48.086[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:48.322[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:48.525[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:48.575[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:48.725[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:49.028[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:49.430[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:50.536[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:50.640[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:50.688[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:51.093[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:51.392[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:52.108[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:52.300[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:52.650[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:52.905[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:53.157[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:54.411[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:54.514[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:54.719[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:55.317[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:56.077[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:56.431[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:57.234[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:57.435[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:57.635[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:57.736[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:57.783[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:58.104[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:58.510[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:58.942[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:59.151[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:24:59.303[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:00.554[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:01.158[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:01.471[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:01.617[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:01.721[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:01.876[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:01.916[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:02.015[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:02.216[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:02.268[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:02.321[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:02.520[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:02.569[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:02.727[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:03.737[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:03.878[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:04.382[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:05.137[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:05.592[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:06.297[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:06.358[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:07.197[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:07.619[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:09.113[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:10.218[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:10.871[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:12.153[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:12.537[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:12.738[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:12.886[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:13.328[DEBUG]: recv bitget websocket [trade]
+2024-07-01 23:25:13.437[DEBUG]: scheduler_daily_reset          : [<frame at 0x7fa712bd0040, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 31, code _main_loop>]
+2024-07-01 23:25:13.437[DEBUG]: Task-102                       : [<frame at 0x7fa713d57a40, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-07-01 23:25:13.437[DEBUG]: scheduler_run_every_1sec       : [<frame at 0x7fa71417b490, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 26, code _main_loop>]
+2024-07-01 23:25:13.437[DEBUG]: params_update_check            : [<frame at 0x7fa713cadd40, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/params.py', line 29, code _check_update>]
+2024-07-01 23:25:13.437[DEBUG]: bitget_cancel                  : [<frame at 0x7fa713cbfa60, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/base_rest.py', line 22, code _cancel_task>]
+2024-07-01 23:25:13.437[DEBUG]: scheduler_disp_params          : [<frame at 0x7fa712bd09f0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 31, code _main_loop>]
+2024-07-01 23:25:13.437[DEBUG]: Task-25                        : [<frame at 0x7fa712c30210, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-07-01 23:25:13.437[DEBUG]: params_update_check            : [<frame at 0x7fa713cb20c0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/params.py', line 29, code _check_update>]
+2024-07-01 23:25:13.437[DEBUG]: Task-17                        : [<frame at 0x7fa712bd0420, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py', line 167, code main_loop>]
+2024-07-01 23:25:13.437[DEBUG]: websocket_disconnect_check     : [<frame at 0x7fa713cb9000, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/base_ws.py', line 22, code _check_disconnect>]
+2024-07-01 23:25:13.437[DEBUG]: scheduler_add_stats            : [<frame at 0x7fa713cbfc50, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/utils/scheduler.py', line 31, code _main_loop>]
+2024-07-01 23:25:13.437[DEBUG]: Task-140                       : [<frame at 0x7fa713d57de0, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-07-01 23:25:13.437[DEBUG]: Task-139                       : [<frame at 0x7fa713d35430, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-07-01 23:25:13.437[DEBUG]: Task-1                         : [<frame at 0x7fa70c000bb0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py', line 160, code start>]
+2024-07-01 23:25:13.437[DEBUG]: bitget_candle                  : [<frame at 0x7fa713d45e40, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/bitget.py', line 407, code _wait_candle_event>]
+2024-07-01 23:25:13.437[DEBUG]: Task-18                        : [<frame at 0x7fa71417a700, file '/usr/lib/python3.10/threading.py', line 973, code _bootstrap>, <frame at 0x7fa717d5b0b0, file '/usr/lib/python3.10/threading.py', line 1016, code _bootstrap_inner>, <frame at 0x7fa7153de180, file '/usr/lib/python3.10/threading.py', line 953, code run>, <frame at 0x7fa714124950, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/trade.py', line 61, code bot_main_loop>, <frame at 0x7fa70c000e00, file '/usr/lib/python3.10/asyncio/runners.py', line 44, code run>, <frame at 0x7fa713e958a0, file '/usr/lib/python3.10/asyncio/base_events.py', line 636, code run_until_complete>, <frame at 0x7fa7141274d0, file '/usr/lib/python3.10/asyncio/base_events.py', line 603, code run_forever>, <frame at 0x7fa70c0018d0, file '/usr/lib/python3.10/asyncio/base_events.py', line 1909, code _run_once>, <frame at 0x7fa71417b2a0, file '/usr/lib/python3.10/asyncio/events.py', line 80, code _run>, <frame at 0x7fa713d560e0, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/main.py', line 292, code wait_keyboard_interrupt>]
+2024-07-01 23:25:13.437[DEBUG]: Task-22                        : [<frame at 0x7fa713d57c10, file '/usr/lib/python3.10/asyncio/locks.py', line 214, code wait>]
+2024-07-01 23:25:13.437[DEBUG]: bitget_websocket               : [<frame at 0x7fa713cbf870, file '/home/ren/workspace/BFSX3_v240/BFSX3-master/libs/exchanges/base_module/multiproc.py', line 165, code _start_websocket>]
+2024-07-01 23:25:13.437[INFO]: Ctrl+C
+2024-07-01 23:25:13.437[INFO]: candel orders : []
+2024-07-01 23:25:13.438[INFO]: [Bitget:websocket] stopping..
+2024-07-01 23:25:13.815[INFO]: [Bitget:websocket] websocket stopped
+2024-07-01 23:25:14.439[INFO]: [Bitget:websocket] waiting until stopped (9)
+2024-07-01 23:25:15.441[INFO]: [Bitget:websocket] waiting until stopped (8)
+2024-07-01 23:25:15.728[INFO]: [Bitget:websocket] terminate process
+2024-07-01 23:25:16.443[INFO]: [Bitget:websocket] waiting until stopped (7)
+2024-07-01 23:25:16.443[INFO]: [Bitget:websocket] process stopped
+2024-07-01 23:25:16.444[INFO]: Wait 5secs...  Current Pos : 0.0
+2024-07-01 23:25:17.446[INFO]: Wait 4secs...  Current Pos : 0.0
+2024-07-01 23:25:18.449[INFO]: Wait 3secs...  Current Pos : 0.0
+2024-07-01 23:25:19.452[INFO]: Wait 2secs...  Current Pos : 0.0
+2024-07-01 23:25:20.454[INFO]: Wait 1secs...  Current Pos : 0.0
+2024-07-01 23:25:21.456[INFO]: Stopped

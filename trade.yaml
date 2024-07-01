@@ -1,0 +1,67 @@
+---
+#----------------------------------------------------------
+# 使用するStrategyファイル
+# 　※ 起動パラメータで下記のように指定した場合にはそちらが優先されます。
+#      例) python3 trade.py strategy/st_mfi.py strategy/st_mfi.yaml
+#----------------------------------------------------------
+
+strategy_py: strategy/a_test.py
+strategy_yaml: strategy/a_test.yaml
+
+#----------------------------------------------------------
+# 取引所とシンボル
+# trade : {exchange, symbol, apikey, secret}
+#
+#     name : 識別用メモ（ただのメモ欄、なんでもよい）
+#
+#     exchange : bitFlyer / gmo / bitget / phemex / bybit / FTX
+#
+#     symbol: FX_BTC_JPY / BTC_JPY /ETH_JPY  (bitFlyer)
+#             BTC_JPY /ETH_JPY /BTC  (GMO)
+#             BTCUSD                 (bybit)
+#             BTCUSD /ETHUSD         (phemex)
+#             BTCUSDT /ETHUSDT..     (bitget)
+#             BTC-PERP /ETH-PERP..   (FTX)
+#
+#     testnet: False/True 省略した場合はFalse
+#
+#     apikey: 省略した場合はpublucモードで稼働
+#     secret: 省略した場合はpublucモードで稼働
+#----------------------------------------------------------
+
+# trade : {'name':"bf",          'exchange':"bitFlyer", 'symbol':"FX_BTC_JPY", 'apikey':"", 'secret':""}
+# trade:  {"name": "gmo",     "exchange": "GMO",     "symbol": "BTC_JPY",     "apikey": "",     "secret": "",   }
+# trade : {'name':"pmx",         'exchange':"phemex",   'symbol':"BTCUSD",     'apikey':"", 'secret':""}
+#trade : {'name':"pmx-test",    'exchange':"phemex",   'symbol':"BTCUSD",     'apikey':"", 'secret':"", 'testnet':True}
+# trade : {'name':"byb-inverse", 'exchange':"bybit",    'symbol':"BTCUSD",     'apikey':"", 'secret':""}
+#trade : {'name':"byb-usdt",    'exchange':"bybit",    'symbol':"BTCUSD",     'apikey':"", 'secret':""}
+trade:
+  {
+    "name": "bgt",
+    "exchange": "bitget",
+    "symbol": "BTCUSDT",
+    "apikey": "",
+    "secret": "",
+    "passphase": "",
+  }
+
+#----------------------------------------------------------
+
+console_log_level: INFO # ERROR / WARNING / INFO/ DEBUG / TRACE
+console_output: true # falseの場合、コンソール出力を行わず代わりにログフォルダに console.txt というファイルで出力する
+
+#pos_server : ['localhost', 51000]    # [稼働後変更不可]  ポジションサーバーへの接続
+
+base_position: 0.0
+
+adjust_position_with_api: false # [稼働後変更不可]  定期的にAPIでポジション取得してズレがあれば補正する
+adjust_max_size:
+  0 # ポジズレの補正時に発注する最大ロット数（大きくずれた際に一度に補正しないように）
+  # ゼロを指定するとポジずれチェックは行うが補正を行わない（ポジずれ確認だけできる）
+#----------------------------------------------------------
+# 秒ローソク足取得サーバーとそのパスワードを指定
+#----------------------------------------------------------
+#candle_server : ''
+#candle_server_user : ''
+#candle_server_pass : ''
+
